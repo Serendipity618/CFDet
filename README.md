@@ -78,7 +78,7 @@ python main.py --dataset_path ./data/BGL.log_structured_v1.csv
 │   ├── model/                  # Trained model states
 │   ├── ad_result/              # Results from anomaly detection evaluation
 │   ├── explain_result/         # Results from counterfactual explanation evaluation
-├── CFDet/ # Jupyter Notebook implementations
+├── CFDet/                      # Jupyter Notebook implementations
 ├── src/                        # Source code directory
 │   ├── __init__.py             # Package initialization
 │   ├── main.py                 # Main script to run training & evaluation
