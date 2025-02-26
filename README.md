@@ -24,7 +24,7 @@ This project introduces **CFDet (Counterfactual Detection)**, a framework that p
 This project is based on the following research:
 
 **Title:** [Achieving Counterfactual Explanation for Sequence Anomaly Detection (Springer)](https://link.springer.com/chapter/10.1007/978-3-031-70371-3_2)  
-**ArXiv Version:** [arXiv:2210.04145](https://arxiv.org/pdf/2210.04145)  
+**ArXiv Version:** [arXiv:2210.04145](https://arxiv.org/abs/2210.04145)  
 **Authors:** He Cheng, Depeng Xu, Shuhan Yuan, Xintao Wu  
 **Publication Date:** August 22, 2024  
 **Conference:** Joint European Conference on Machine Learning and Knowledge Discovery in Databases  
