@@ -10,9 +10,9 @@ from cfdet_trainer import *
 
 # Parse command-line arguments
 parser = argparse.ArgumentParser(description='Anomaly Detection and Explanation')
-parser.add_argument('--dataset_path', type=str, default='./data/BGL.log_structured_v1.csv', help='Path to the dataset')
-parser.add_argument('--model_path', type=str, default='./output/model/', help='Path to save/load models')
-parser.add_argument('--output_path', type=str, default='./output/', help='Path to save evaluation results')
+parser.add_argument('--dataset_path', type=str, default='../data/BGL.log_structured_v1.csv', help='Path to the dataset')
+parser.add_argument('--model_path', type=str, default='../output/model/', help='Path to save/load models')
+parser.add_argument('--output_path', type=str, default='../output/', help='Path to save evaluation results')
 
 # Batch sizes for different phases of training and evaluation
 parser.add_argument('--batch_train', type=int, default=512, help='Batch size for training')
