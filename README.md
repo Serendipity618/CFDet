@@ -36,7 +36,7 @@ This project is based on the following research:
 
 ---
 
-## 📖 Citation
+### 📖 Citation
 If you use CFDet in your research, please cite the following paper:
 
 ```bibtex
@@ -52,7 +52,7 @@ If you use CFDet in your research, please cite the following paper:
 
 ---
 
-## ⚙️ **Installation**
+# ⚙️ **Installation**
 Ensure you have **Python 3.8+** installed. Install dependencies using:
 
 ```bash
