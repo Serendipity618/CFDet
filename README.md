@@ -1,26 +1,25 @@
 # CFDet: Achieving Counterfactual Explanation for Sequence Anomaly Detection
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg)](https://www.python.org/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-1.10%2B-red.svg)](https://pytorch.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-
-CFDet (**Counterfactual Detection**) is a framework for **counterfactual explanation in sequence anomaly detection**. It explains the predictions of **Deep SVDD-based anomaly detection models** by highlighting key **anomalous entries** responsible for an anomaly.  
+CFDet (**Counterfactual Detection**) is a framework for **counterfactual explanation in sequence anomaly detection**. It explains the predictions of **Deep SVDD-based anomaly detection models** by highlighting key **anomalous entries** responsible for an anomaly.
 
 This repository provides:
+
 - **Deep SVDD for sequence anomaly detection** 📈
 - **CFDet for counterfactual explanations** 🔍
 - **Preprocessing, training, and evaluation scripts** ⚙️
 
 ---
 
-## 📖 **Introduction**
-Anomaly detection on discrete sequential data is crucial for detecting novel attacks or abnormal system behaviors, particularly from log messages. While existing methods perform well at detecting anomalies, providing **explanations** for these detections is still a challenge due to the **discrete nature of sequential data**. 
+## 📖 Introduction
+
+Anomaly detection on discrete sequential data is crucial for detecting novel attacks or abnormal system behaviors, particularly from log messages. While existing methods perform well at detecting anomalies, providing **explanations** for these detections is still a challenge due to the **discrete nature of sequential data**.
 
 This project introduces **CFDet (Counterfactual Detection)**, a framework that provides **counterfactual explanations** for detected anomalies by highlighting the **anomalous entries** that contribute to the anomaly classification.
 
 ---
 
-## 📄 **Reference Paper**
+## 📄 Reference Paper
+
 This project is based on the following research:
 
 **Title:** [Achieving Counterfactual Explanation for Sequence Anomaly Detection (Springer)](https://link.springer.com/chapter/10.1007/978-3-031-70371-3_2)  
@@ -31,12 +30,14 @@ This project is based on the following research:
 **Pages:** 19-35  
 **Publisher:** Springer Nature Switzerland  
 
-### **Abstract**
+### Abstract
+
 > Anomaly detection on discrete sequential data has been investigated for a long time because of its potential in various applications, such as detecting novel attacks or abnormal system behaviors from log messages. Although many approaches can achieve good performance on anomalous sequence detection, how to explain the detection results is still challenging due to the discrete nature of sequential data. Specifically, given a sequence that is detected as anomalous, the explanation is to highlight those anomalous entries in the sequence leading to the anomalous outcome. To this end, we propose a novel framework, called CFDet, that can explain the detection results of one-class sequence anomaly detection models by highlighting the anomalous entries in the sequences based on the idea of counterfactual explanation. Experimental results on three datasets show that CFDet can provide explanations by correctly detecting anomalous entries.
 
 ---
 
-### 📖 Citation
+## 📖 Citation
+
 If you use CFDet in your research, please cite the following paper:
 
 ```bibtex
@@ -49,17 +50,20 @@ If you use CFDet in your research, please cite the following paper:
   pages     = {19--35},
   doi       = {10.1007/978-3-031-70371-3_2}
 }
+```
 
 ---
 
-# ⚙️ **Installation**
+## ⚙️ Installation
+
 Ensure you have **Python 3.8+** installed. Install dependencies using:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### **Required Libraries**
+### Required Libraries
+
 - `torch`
 - `numpy`
 - `pandas`
@@ -67,14 +71,16 @@ pip install -r requirements.txt
 
 ---
 
-## 🚀 **Usage**
+## 🚀 Usage
+
 To train and evaluate the CFDet model, run:
 
 ```bash
 python main.py --dataset_path ../data/BGL.log_structured_v1.csv
 ```
 
-### **Workflow**
+### Workflow
+
 1. **Data Processing**: Loads and preprocesses log data.
 2. **Anomaly Detection (Deep SVDD)**:
    - Initializes Deep SVDD model.
@@ -85,7 +91,8 @@ python main.py --dataset_path ../data/BGL.log_structured_v1.csv
 
 ---
 
-## 📂 **Project Structure**
+## 📂 Project Structure
+
 ```
 ├── data/                       # Folder for dataset files (e.g., BGL.log_structured_v1.csv)
 ├── output/                     # Output directory for trained models and evaluation results
@@ -108,40 +115,18 @@ python main.py --dataset_path ../data/BGL.log_structured_v1.csv
 
 ---
 
-## 🛠 **Command-line Arguments**
-| Argument | Description | Default |
-|----------|------------|---------|
-| `--dataset_path` | Path to the dataset file | `./data/BGL.log_structured_v1.csv` |
-| `--model_path` | Directory to save/load trained models | `./output/model/` |
-| `--output_path` | Directory for evaluation results | `./output/` |
-| `--batch_train` | Batch size for training | `512` |
-| `--batch_test` | Batch size for testing | `4096` |
-| `--batch_val` | Batch size for validation | `4096` |
-| `--epochs` | Number of epochs for anomaly detection model training | `50` |
-| `--epochs2` | Number of epochs for CFDet training | `100` |
-| `--triplet_lambda` | Triplet loss weight for CFDet | `1.0` |
-| `--sparsity_lambda` | Sparsity loss weight for CFDet | `0.15` |
-| `--continuity_lambda` | Continuity loss weight for CFDet | `0.05` |
-| `--lr` | Learning rate | `1e-3` |
+## 📜 License
 
-Example usage:
-
-```bash
-python main.py --dataset_path ../data/BGL.log_structured_v1.csv --epochs 100 --batch_train 256
-```
-
----
-
-## 📜 **License**
 This project is licensed under the **MIT License**.
 
 ---
 
-## 📬 **Contact**
+## 📬 Contact
+
 For any inquiries, please contact **He Cheng** or refer to the corresponding paper.
 
 ---
 
-## 🎓 **Acknowledgments**
-This project is based on **"Achieving Counterfactual Explanation for Sequence Anomaly Detection"**, presented at the **Joint European Conference on Machine Learning and Knowledge Discovery in Databases, 2024**.
+## 🎓 Acknowledgments
 
+This project is based on **"Achieving Counterfactual Explanation for Sequence Anomaly Detection"**, presented at the **Joint European Conference on Machine Learning and Knowledge Discovery in Databases, 2024**.
