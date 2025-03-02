@@ -33,6 +33,23 @@ This project is based on the following research:
 
 ### **Abstract**
 > Anomaly detection on discrete sequential data has been investigated for a long time because of its potential in various applications, such as detecting novel attacks or abnormal system behaviors from log messages. Although many approaches can achieve good performance on anomalous sequence detection, how to explain the detection results is still challenging due to the discrete nature of sequential data. Specifically, given a sequence that is detected as anomalous, the explanation is to highlight those anomalous entries in the sequence leading to the anomalous outcome. To this end, we propose a novel framework, called CFDet, that can explain the detection results of one-class sequence anomaly detection models by highlighting the anomalous entries in the sequences based on the idea of counterfactual explanation. Experimental results on three datasets show that CFDet can provide explanations by correctly detecting anomalous entries.
+
+---
+
+## 📖 Citation
+If you use CFDet in your research, please cite the following paper:
+
+```bibtex
+@inproceedings{cheng2024cfdet,
+  author    = {He Cheng and Depeng Xu and Shuhan Yuan and Xintao Wu},
+  title     = {Achieving Counterfactual Explanation for Sequence Anomaly Detection},
+  booktitle = {Joint European Conference on Machine Learning and Knowledge Discovery in Databases},
+  year      = {2024},
+  publisher = {Springer Nature Switzerland},
+  pages     = {19--35},
+  doi       = {10.1007/978-3-031-70371-3_2}
+}
+
 ---
 
 ## ⚙️ **Installation**
